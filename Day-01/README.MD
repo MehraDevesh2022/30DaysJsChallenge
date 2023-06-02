@@ -61,13 +61,14 @@ console.log(f(3, 4)); // 7
     return sum;
   }
 }
-
 const f = createFunction();
 console.log(f(3, 4)); // 7
 
 ```
-- In the example above, createFunction returns f, which is a function. This is possible because functions are first-class citizens in JavaScript. This means that functions can be passed around like any other value. In this case, createFunction returns a function, which is then assigned to f. f can then be called like any other function.
-- This is a powerful feature of JavaScript that allows you to create functions within functions. This is useful for creating closures, which are functions that have access to variables from an outer scope. This is a common pattern in JavaScript. For example, the function passed to setTimeout in the example below is a closure.
+  - In the example above, createFunction returns f, which is a function. This is possible because functions are first-class citizens in JavaScript. This means that functions can be passed around like any other value. In this case, createFunction returns a function, which is then assigned to f. f can then be called like any other function.
+  - This is a powerful feature of JavaScript that allows you to create functions within functions. This is useful for creating closures, which are functions that have access to variables from an outer scope. This is a common pattern in JavaScript. For example, the function passed to setTimeout in the example below is a closure.
+
+
 
 ```javascript
 function createFunction() {
@@ -78,8 +79,9 @@ function createFunction() {
 }
 const f = createFunction();
 setTimeout(f, 1000); // 3
+
 ```
-- The function above will print 3 to the console after 1000 milliseconds (1 second). This is because the function passed to setTimeout is a closure that has access to the variable a from the outer scope. This is a common pattern in JavaScript.
+  - The function above will print 3 to the console after 1000 milliseconds (1 second). This is because the function passed to setTimeout is a closure that has access to the variable a from the outer scope. This is a common pattern in JavaScript.
 
  ### Closures 
    - An important topic in JavaScript is the concept of closures. When a function is created, it has access to a reference to all the variables declared around it, also known as it's lexical environment. The combination of the function and its enviroment is called a closure. This is a powerful and often used feature of the language.
