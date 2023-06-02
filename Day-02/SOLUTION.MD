@@ -68,7 +68,11 @@ addTo2.add(10); // 12
 
 - Closures are also more efficient than classes. The class example uses the new keyword, which is a relatively expensive operation in JavaScript. The closure example does not use the new keyword, so it is more efficient.
 
+<<<<<<< HEAD
 - Another difference is how the functions are stored in memory. If you create many instances of a class, each instance stores a single reference to the prototype object where all the methods are stored. Whereas for closures, all the "methods" are generated and a "copy" of each is stored in memory each time the outer function is called. For this reason, classes can be more efficient, particularly in the case where there are many methods. However, this is not always the case. If you only need one instance of a class, then closures are more efficient. This is because the closure example does not use the new keyword, which is a relatively expensive operation in JavaScript.
+=======
+-Another difference is how the functions are stored in memory. If you create many instances of a class, each instance stores a single reference to the prototype object where all the methods are stored. Whereas for closures, all the "methods" are generated and a "copy" of each is stored in memory each time the outer function is called. For this reason, classes can be more efficient, particularly in the case where there are many methods. However, this is not always the case. If you only need one instance of a class, then closures are more efficient. This is because the closure example does not use the new keyword, which is a relatively expensive operation in JavaScript.
+>>>>>>> a7dc564fe113481a9a63ff42ce855bb20b138a4d
 
   
   
